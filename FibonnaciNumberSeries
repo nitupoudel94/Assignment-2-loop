@@ -1,0 +1,28 @@
+public class FibonacciForLoop {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//WAP to print Fibonacci Number using For Loop
+		
+//setting it to the number of elements i want in the fibonacci series
+		int maxNumber = 20;
+		int previousNumber = 0;
+		int nextNumber = 1;
+		
+		System.out.print("Fibonacci series of "+maxNumber+" number:");
+		
+		for(int i = 1; i <= maxNumber; ++i)
+		{
+			System.out.print(previousNumber+ " ");
+	/*on each iteration, we are assigning second number
+	 * to the first number and assigning the sum of last two
+	 * number to second number
+	 */
+			int sum = previousNumber + nextNumber;
+			previousNumber = nextNumber;
+			nextNumber = sum;
+		}
+
+	}
+
+}
