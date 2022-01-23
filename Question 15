@@ -1,0 +1,59 @@
+import java.util.Scanner;
+
+public class CheckLeapYear {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//WAP check if the year is leap year or not
+
+		
+Scanner sc = new Scanner(System.in);
+System.out.print("enter the year:- ");
+int year = sc.nextInt();
+if(year%400==0)
+{
+	System.out.println(year +" is a leap year ");
+}
+else
+	System.out.println(year + " is not a leap year ");
+	}
+
+
+
+	}
+
+
+CONDITIONAL LEAP YEAR PROGRAM:
+
+public class LeapYear {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//Print leap year or not
+		//every year that is exactly divisible by 4 or 400 except for 100 are leap years.
+		//IF: any year that is divisible by 400 is leap year
+		//ELSE IF: If divisible by 4 but not by 100 is also leap year
+		//ELSE:Not a leap year
+				//example: year 2400 is divided by 400 or 4 is leap year
+	// but year 2200 is not a leap year because not exactly divided
+		
+		
+int year = 2200;
+if(year%400==0)
+{
+	System.out.println("Leap Year");
+
+}
+else if(year%4==0 && year%100!=0)
+{
+	System.out.println("Leap Year");
+	
+}
+else
+{
+	System.out.println("Not a Leap Year");
+	
+}
+	}
+
+}
